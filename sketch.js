@@ -37,16 +37,16 @@ function draw(){
 function moveCow(){
 
   if(keyIsDown(RIGHT_ARROW)){
-    xCow += velocityCow
+    xCow += velocityCow;
   }
   if(keyIsDown(LEFT_ARROW)){
-    xCow -= velocityCow
+    xCow -= velocityCow;
   }
   if(keyIsDown(UP_ARROW)){
-    yCow -= velocityCow
+    yCow -= velocityCow;
   }
   if(keyIsDown(DOWN_ARROW)){
-    yCow += velocityCow
+    yCow += velocityCow;
   } 
   xCow = constrain(xCow, 0, w-wCow);
   yCow = constrain(yCow, 0, h-hCow);
