@@ -23,4 +23,13 @@ function moveCar(){
   }
  }
 
+ function collision(){
+  for( i=0; i < car.length; i++ ){
+    if(collideRectRect(xCar[i], yCar[i], wCar, hCar, xCow, yCow, wCow, hCow )){
+      xCow = w/2;
+      yCow = h - 33;
+    }
+  }
+}
+
 

@@ -11,4 +11,5 @@ function draw(){
   moveCow();
   showCar();
   moveCar();
+  collision();
 }
