@@ -1,8 +1,9 @@
-let w = 600;
-let h = 400;
+const w = 600;
+const h = 400;
 
 function setup(){
   createCanvas(w, h);
+  soundtrack.loop();  
 }
 
 function draw(){
@@ -12,4 +13,6 @@ function draw(){
   showCar();
   moveCar();
   collision();
+  scoring();
+   
 }

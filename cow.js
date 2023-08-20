@@ -1,5 +1,8 @@
-let xCow = w/2;
-let yCow = h - 33;
+const initialXCow = w/2;
+const initialYCow = h - 33;
+
+let xCow = initialXCow;
+let yCow = initialYCow;
 let wCow = 30;
 let hCow = 30;
 let velocityCow = 5;
@@ -24,5 +27,3 @@ function moveCow(){
   xCow = constrain(xCow, 0, w-wCow);
   yCow = constrain(yCow, 0, h-hCow);
 }
-
-
